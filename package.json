@@ -1,0 +1,40 @@
+{
+  "name": "portfolio-benjamin-kone",
+  "version": "1.0.0",
+  "description": "Portfolio moderne et futuriste de Benjamin Kone - Développeur Informatique",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "développeur",
+    "informatique",
+    "web",
+    "html",
+    "css",
+    "javascript",
+    "bootstrap",
+    "responsive",
+    "modern"
+  ],
+  "author": "Benjamin Kone",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/votre-username/portfolio.git"
+  },
+  "homepage": "https://votre-username.github.io/portfolio",
+  "bugs": {
+    "url": "https://github.com/votre-username/portfolio/issues"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
