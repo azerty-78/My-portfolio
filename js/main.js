@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialisation du thème
     initTheme();
+    
+    // Initialisation du modal de profil
+    initProfileModal();
+    
+    // Initialisation des interactions des photos
+    initPhotoInteractions();
 });
 
 // ===== NAVIGATION =====
@@ -387,6 +393,60 @@ function handleResize() {
 }
 
 window.addEventListener('resize', handleResize);
+
+// ===== MODAL DE PROFIL =====
+function initProfileModal() {
+    const profileImg = document.querySelector('.profile-img');
+    const profileModal = document.getElementById('profileModal');
+    const profileModalClose = document.getElementById('profileModalClose');
+    
+    if (profileImg && profileModal) {
+        profileImg.addEventListener('click', function() {
+            profileModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        profileModalClose.addEventListener('click', function() {
+            profileModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        profileModal.addEventListener('click', function(e) {
+            if (e.target === profileModal) {
+                profileModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Fermer avec la touche Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && profileModal.classList.contains('active')) {
+                profileModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+}
+
+// ===== INTERACTIONS DES PHOTOS =====
+function initPhotoInteractions() {
+    const photoItems = document.querySelectorAll('.photo-item');
+    
+    photoItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const img = this.querySelector('.about-img');
+            const src = img.src;
+            
+            // Ouvrir le modal avec cette photo
+            const profileModal = document.getElementById('profileModal');
+            const modalImg = profileModal.querySelector('.profile-modal-img');
+            
+            modalImg.src = src;
+            profileModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+}
 
 // ===== PERFORMANCE =====
 // Lazy loading des images
