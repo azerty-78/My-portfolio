@@ -38,13 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ===== NAVIGATION MOBILE =====
 function initNavigation() {
-    console.log('Initialisation de la navigation');
+    console.log('🚀 Initialisation de la navigation');
     
     const mobileNavToggle = document.getElementById('mobileNavToggle');
     const mainNav = document.getElementById('mainNav');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    console.log('Éléments trouvés:', {
+    console.log('📱 Éléments trouvés:', {
         mobileNavToggle: !!mobileNavToggle,
         mainNav: !!mainNav,
         navLinks: navLinks.length
@@ -52,33 +52,50 @@ function initNavigation() {
     
     // Toggle navigation mobile
     if (mobileNavToggle && mainNav) {
+        console.log('✅ Éléments de navigation trouvés, ajout des événements');
+        
         mobileNavToggle.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            console.log('Toggle menu mobile');
+            console.log('🍔 Toggle menu mobile cliqué');
             
             this.classList.toggle('active');
             mainNav.classList.toggle('active');
             document.body.classList.toggle('nav-open');
+            
+            console.log('📱 État du menu:', {
+                toggleActive: this.classList.contains('active'),
+                navActive: mainNav.classList.contains('active'),
+                bodyNavOpen: document.body.classList.contains('nav-open')
+            });
         });
         
         // Fermer le menu en cliquant sur un lien
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                console.log('Lien cliqué:', this.getAttribute('href'));
+                console.log('🔗 Lien cliqué:', this.getAttribute('href'));
                 mobileNavToggle.classList.remove('active');
                 mainNav.classList.remove('active');
                 document.body.classList.remove('nav-open');
+                console.log('📱 Menu fermé après clic sur lien');
             });
         });
         
         // Fermer le menu en cliquant à l'extérieur
         document.addEventListener('click', function(e) {
             if (!mobileNavToggle.contains(e.target) && !mainNav.contains(e.target)) {
-                mobileNavToggle.classList.remove('active');
-                mainNav.classList.remove('active');
-                document.body.classList.remove('nav-open');
+                if (mainNav.classList.contains('active')) {
+                    console.log('📱 Fermeture du menu (clic extérieur)');
+                    mobileNavToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    document.body.classList.remove('nav-open');
+                }
             }
+        });
+    } else {
+        console.error('❌ Éléments de navigation manquants:', {
+            mobileNavToggle: !!mobileNavToggle,
+            mainNav: !!mainNav
         });
     }
     
