@@ -3,236 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Djibril - Portfolio Développeur Mobile & Backend</title>
-    <meta name="description" content="Portfolio de Ben Djibril - Développeur Mobile & Backend passionné par les technologies modernes et l'innovation">
-    <meta name="keywords" content="développeur mobile, développeur backend, portfolio, informatique, programmation, Android, Kotlin, Spring Boot, Ben Djibril">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <title>Ben Djibril - Portfolio</title>
+    <meta name="description" content="Portfolio de Ben Djibril - Développeur Mobile & Backend">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <div class="profile-section">
-                <div class="profile-image">
-                    <img src="assets/images/profile_picture.jpg" alt="Ben Djibril" class="profile-img">
-                    <div class="profile-status"></div>
-                </div>
-                <h3 class="profile-name">Ben Djibril</h3>
-                <p class="profile-title">Développeur Mobile & Backend</p>
-            </div>
-        </div>
-        
-        <nav class="sidebar-nav">
-            <ul class="nav-menu">
-                <li class="nav-item active">
-                    <a href="#home" class="nav-link">
-                        <i class="fas fa-home"></i>
-                        <span>Accueil</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">
-                        <i class="fas fa-user"></i>
-                        <span>À propos</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">
-                        <i class="fas fa-code"></i>
-                        <span>Compétences</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">
-                        <i class="fas fa-rocket"></i>
-                        <span>Projets</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        
-        <div class="sidebar-footer">
-            <div class="social-links-sidebar">
-                <a href="https://github.com/azerty-78" class="social-link" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ben-djibril?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" class="social-link" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            <div class="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </div>
-        </div>
-    </div>
-
-    <!-- Mobile Navigation Toggle -->
-    <div class="mobile-nav-toggle" id="mobileNavToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <!-- Modal pour l'image de profil -->
-    <div class="profile-modal" id="profileModal">
-        <div class="profile-modal-content">
-            <button class="profile-modal-close" id="profileModalClose">
-                <i class="fas fa-times"></i>
-            </button>
-            <img src="assets/images/ben_front.jpg" alt="Ben Djibril" class="profile-modal-img">
-        </div>
-    </div>
-
-    <!-- Main Content Wrapper -->
-    <div class="main-content" id="mainContent">
-        <!-- Section Accueil -->
-        <section id="home" class="hero-section">
-            <div class="hero-background">
-                <div class="particles"></div>
-            </div>
-            <div class="hero-container">
-                <div class="hero-content" data-aos="fade-up">
-                    <div class="hero-badge">
-                        <i class="fas fa-code"></i>
-                        <span>Développeur Mobile & Backend</span>
-                    </div>
-                    <h1 class="hero-title">
-                        <span class="gradient-text">Ben Djibril</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Créateur d'expériences digitales</h2>
-                    <p class="hero-description">
-                        Passionné par l'innovation technologique et la création d'applications mobiles et solutions backend modernes. 
-                        Spécialisé en Kotlin, Jetpack Compose et Spring Boot.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary btn-lg">
-                            <i class="fas fa-rocket"></i> Découvrir mes projets
-                        </a>
-                        <a href="#contact" class="btn btn-outline btn-lg">
-                            <i class="fas fa-envelope"></i> Me contacter
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Années d'expérience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Projets réalisés</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Technologies maîtrisées</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="floating-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>Mobile First</span>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-server"></i>
-                        <span>Backend Robust</span>
-                    </div>
-                    <div class="floating-card">
-                        <i class="fas fa-rocket"></i>
-                        <span>Innovation</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <!-- Section À propos -->
-    <section id="about" class="section-padding">
+    <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title" data-aos="fade-up">À propos de moi</h2>
-                    <div class="title-underline"></div>
+            <h1 class="logo">
+                <i class="fas fa-code"></i>
+                Ben Djibril
+            </h1>
+            <nav class="nav">
+                <a href="#home"><i class="fas fa-home"></i> Accueil</a>
+                <a href="#about"><i class="fas fa-user"></i> À propos</a>
+                <a href="#skills"><i class="fas fa-code"></i> Compétences</a>
+                <a href="#projects"><i class="fas fa-rocket"></i> Projets</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Développeur Mobile & Backend</span>
                 </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="about-image">
-                        <div class="about-photos">
-                            <div class="photo-grid">
-                                <div class="photo-item main-photo">
-                                    <img src="assets/images/ben_without.jpg" alt="Ben Djibril" class="about-img">
-                                    <div class="photo-overlay">
-                                        <i class="fas fa-user"></i>
-                                    </div>
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/images/ben_fron_smile.jpg" alt="Ben Djibril" class="about-img">
-                                    <div class="photo-overlay">
-                                        <i class="fas fa-smile"></i>
-                                    </div>
-                                </div>
-                                <div class="photo-item">
-                                    <img src="assets/images/ben_front.jpg" alt="Ben Djibril" class="about-img">
-                                    <div class="photo-overlay">
-                                        <i class="fas fa-code"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-info">
-                                <h3>Ben Djibril</h3>
-                                <p>Développeur Mobile & Backend</p>
-                            </div>
-                        </div>
+                <h2 class="hero-title">Ben Djibril</h2>
+                <p class="hero-subtitle">Passionné par l'innovation technologique</p>
+                <p class="hero-description">
+                    Spécialisé en Kotlin, Jetpack Compose et Spring Boot. 
+                    Créateur d'applications mobiles et solutions backend modernes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Me contacter
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Technologies maîtrisées</span>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="about-content">
-                        <h3>Passionné par la technologie</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-user-circle"></i>
+                À propos de moi
+            </h2>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-text">
                         <p>
-                            Je suis un développeur mobile et backend passionné par la création d'applications Android modernes et de solutions backend robustes. 
-                            Mon expertise couvre le développement mobile avec Kotlin/Jetpack Compose, le développement backend avec Spring Boot, 
-                            et le développement cross-platform avec Kotlin Multiplatform.
-                        </p>
-                        <p>
-                            Constamment en quête d'apprentissage, je reste à l'affût des dernières tendances technologiques 
-                            pour créer des solutions qui répondent aux défis actuels et futurs.
+                            Je suis un développeur mobile et backend passionné par la création d'applications Android modernes 
+                            et de solutions backend robustes. Mon expertise couvre le développement mobile avec Kotlin/Jetpack Compose, 
+                            le développement backend avec Spring Boot, et le développement cross-platform avec Kotlin Multiplatform.
                         </p>
                         <div class="achievements">
-                            <h4>🏆 Réalisations notables :</h4>
+                            <h3><i class="fas fa-trophy"></i> Réalisations notables :</h3>
                             <ul>
                                 <li><strong>Concours CANAM 2023 :</strong> Lauréat dans la catégorie programmation Java parmi 492 candidats</li>
                                 <li><strong>Stage ENS Yaoundé :</strong> Développement d'une application mobile de suivi du personnel enseignant</li>
                                 <li><strong>Freelance :</strong> Développement d'applications Android et solutions backend pour divers clients</li>
                             </ul>
                         </div>
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <h4>3+</h4>
-                                <p>Années d'expérience</p>
+                    </div>
+                    <div class="about-visual">
+                        <div class="profile-card">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user-circle"></i>
                             </div>
-                            <div class="stat-item">
-                                <h4>5+</h4>
-                                <p>Projets réalisés</p>
-                            </div>
-                            <div class="stat-item">
-                                <h4>10+</h4>
-                                <p>Technologies maîtrisées</p>
+                            <h3>Ben Djibril</h3>
+                            <p>Développeur Mobile & Backend</p>
+                            <div class="profile-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Yaoundé, Cameroun
                             </div>
                         </div>
                     </div>
@@ -241,109 +109,102 @@
         </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="section-padding bg-light">
+    <section id="skills" class="section bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title" data-aos="fade-up">Mes Compétences</h2>
-                    <div class="title-underline"></div>
-                </div>
-            </div>
+            <h2 class="section-title">
+                <i class="fas fa-laptop-code"></i>
+                Mes Compétences
+            </h2>
             <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <div class="skill-icon">
+                <div class="skill-category">
+                    <div class="skill-header">
                         <i class="fas fa-mobile-alt"></i>
+                        <h3>Développement Mobile</h3>
                     </div>
-                    <h3>Développement Mobile</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>Kotlin (Avancé)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
+                    <div class="skill-item">
+                        <span>Kotlin</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>Jetpack Compose (Avancé)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Jetpack Compose</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>Kotlin Multiplatform (Bon)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Kotlin Multiplatform</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>Java (Bon)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-icon">
+
+                <div class="skill-category">
+                    <div class="skill-header">
                         <i class="fas fa-server"></i>
+                        <h3>Développement Backend</h3>
                     </div>
-                    <h3>Développement Back-end</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>Spring Boot (Bon)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                    <div class="skill-item">
+                        <span>Spring Boot</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>Java (Backend)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Java (Backend)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>Kotlin (Backend)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Kotlin (Backend)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>API REST</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>API REST</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <div class="skill-icon">
+
+                <div class="skill-category">
+                    <div class="skill-header">
                         <i class="fas fa-tools"></i>
+                        <h3>Outils & Frontend</h3>
                     </div>
-                    <h3>Outils & Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span>IntelliJ IDEA (Très bon)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                    <div class="skill-item">
+                        <span>IntelliJ IDEA</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>Android Studio (Très bon)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Android Studio</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>React.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
                         </div>
-                        <div class="skill-item">
-                            <span>Canva (Très bon)</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Canva</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
@@ -351,107 +212,104 @@
         </div>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projects" class="section-padding">
+    <section id="projects" class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title" data-aos="fade-up">Mes Projets</h2>
-                    <div class="title-underline"></div>
-                </div>
-            </div>
+            <h2 class="section-title">
+                <i class="fas fa-project-diagram"></i>
+                Mes Projets
+            </h2>
             <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
+                <div class="project-card">
+                    <div class="project-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Class_Manager</h3>
-                        <p>Application Android pour la gestion des classes universitaires : création automatique de groupes d'exposés, enregistrement des étudiants et comptabilité matière.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">Jetpack Compose</span>
-                            <span class="tech-tag">Android</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">Voir le projet</a>
-                            <a href="https://github.com/azerty-78/Class_Manager2" class="btn btn-sm btn-outline-primary" target="_blank">Code source</a>
-                        </div>
+                    <h3>Class_Manager</h3>
+                    <p>Application Android pour la gestion des classes universitaires : création automatique de groupes d'exposés, enregistrement des étudiants et comptabilité matière.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Jetpack Compose</span>
+                        <span class="tech-tag">Android</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/azerty-78/Class_Manager2" class="btn btn-sm btn-primary" target="_blank">
+                            <i class="fab fa-github"></i> Code source
+                        </a>
                     </div>
                 </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
+
+                <div class="project-card">
+                    <div class="project-icon">
                         <i class="fas fa-draw-polygon"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Logiciel de Figures Géométriques 2D</h3>
-                        <p>Logiciel développé pour CANAM permettant de représenter et modifier les dimensions des figures géométriques en 2D.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Swing</span>
-                            <span class="tech-tag">2D Graphics</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">Voir le projet</a>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Code source</a>
-                        </div>
+                    <h3>Logiciel de Figures Géométriques 2D</h3>
+                    <p>Logiciel développé pour CANAM permettant de représenter et modifier les dimensions des figures géométriques en 2D.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Swing</span>
+                        <span class="tech-tag">2D Graphics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> Voir le projet
+                        </a>
                     </div>
                 </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
+
+                <div class="project-card">
+                    <div class="project-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>Application de Suivi du Personnel</h3>
-                        <p>Application mobile développée pour l'ENS Yaoundé permettant le suivi et la gestion du personnel enseignant.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">Android</span>
-                            <span class="tech-tag">Spring Boot</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">Voir le projet</a>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Code source</a>
-                        </div>
+                    <h3>Application de Suivi du Personnel</h3>
+                    <p>Application mobile développée pour l'ENS Yaoundé permettant le suivi et la gestion du personnel enseignant.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">Spring Boot</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> Voir le projet
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="section-padding bg-dark text-white">
+    <section id="contact" class="section bg-dark">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center mb-5">
-                    <h2 class="section-title" data-aos="fade-up">Me Contacter</h2>
-                    <div class="title-underline"></div>
-                </div>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info" data-aos="fade-right">
+            <h2 class="section-title text-white">
+                <i class="fas fa-envelope-open"></i>
+                Me Contacter
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
                     <h3>Parlons de votre projet</h3>
-                    <p>
-                        Vous avez un projet en tête ? Une idée innovante ? 
-                        N'hésitez pas à me contacter pour en discuter !
-                    </p>
+                    <p>Vous avez un projet en tête ? Une idée innovante ? N'hésitez pas à me contacter !</p>
+                    
                     <div class="contact-methods">
                         <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
                             <div>
                                 <h4>Email</h4>
                                 <p>bendjibril789@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <i class="fas fa-phone"></i>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
                             <div>
                                 <h4>Téléphone</h4>
                                 <p>+237 673200421</p>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
                             <div>
                                 <h4>Localisation</h4>
                                 <p>Yaoundé, Cameroun</p>
@@ -459,13 +317,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form" data-aos="fade-left">
+
+                <div class="contact-form">
                     <form>
-                        <input type="text" class="form-control" placeholder="Votre nom" required>
-                        <input type="email" class="form-control" placeholder="Votre email" required>
-                        <input type="text" class="form-control" placeholder="Sujet" required>
-                        <textarea class="form-control" rows="5" placeholder="Votre message" required></textarea>
-                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                        <div class="form-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-tag"></i>
+                            <input type="text" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-comment"></i>
+                            <textarea placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> Envoyer le message
                         </button>
                     </form>
@@ -474,39 +345,29 @@
         </div>
     </section>
 
-        <!-- Footer -->
-        <footer class="footer">
+    <footer class="footer">
+        <div class="container">
             <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-section">
-                        <h4>Ben Djibril</h4>
-                        <p>Développeur Mobile & Backend passionné par l'innovation technologique</p>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Contact</h4>
-                        <p><i class="fas fa-envelope"></i> bendjibril789@gmail.com</p>
-                        <p><i class="fas fa-phone"></i> +237 673200421</p>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Suivez-moi</h4>
-                        <div class="social-links">
-                            <a href="https://github.com/azerty-78" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/ben-djibril?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
+                <div class="footer-info">
+                    <h4><i class="fas fa-code"></i> Ben Djibril</h4>
+                    <p>Développeur Mobile & Backend passionné par l'innovation technologique</p>
                 </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2024 Ben Djibril. Tous droits réservés.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/azerty-78" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ben-djibril" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
-        </footer>
-    </div> <!-- Fin du main-content -->
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/main.js"></script>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ben Djibril. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
