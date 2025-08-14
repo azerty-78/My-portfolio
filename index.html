@@ -16,12 +16,35 @@
                 <i class="fas fa-code"></i>
                 Ben Djibril
             </h1>
-            <nav class="nav">
-                <a href="#home"><i class="fas fa-home"></i> Accueil</a>
-                <a href="#about"><i class="fas fa-user"></i> À propos</a>
-                <a href="#skills"><i class="fas fa-code"></i> Compétences</a>
-                <a href="#projects"><i class="fas fa-rocket"></i> Projets</a>
-                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            
+            <!-- Bouton toggle thème -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+                <i class="fas fa-sun" id="themeIcon"></i>
+            </button>
+            
+            <!-- Bouton hamburger pour mobile -->
+            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menu de navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav" id="mainNav">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i> Accueil
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i> À propos
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-code"></i> Compétences
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-rocket"></i> Projets
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
             </nav>
         </div>
     </header>
@@ -32,17 +55,17 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">
+                <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
                     <i class="fas fa-code"></i>
                     <span>Développeur Mobile & Backend</span>
                 </div>
-                <h2 class="hero-title">Ben Djibril</h2>
-                <p class="hero-subtitle">Passionné par l'innovation technologique</p>
-                <p class="hero-description">
+                <h2 class="hero-title" data-aos="fade-up" data-aos-delay="200">Ben Djibril</h2>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">Passionné par l'innovation technologique</p>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
                     Spécialisé en Kotlin, Jetpack Compose et Spring Boot. 
                     Créateur d'applications mobiles et solutions backend modernes.
                 </p>
-                <div class="hero-buttons">
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="500">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-rocket"></i> Voir mes projets
                     </a>
@@ -50,16 +73,16 @@
                         <i class="fas fa-envelope"></i> Me contacter
                     </a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="700">
                         <span class="stat-number">3+</span>
                         <span class="stat-label">Années d'expérience</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="800">
                         <span class="stat-number">5+</span>
                         <span class="stat-label">Projets réalisés</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="900">
                         <span class="stat-number">10+</span>
                         <span class="stat-label">Technologies maîtrisées</span>
                     </div>
@@ -70,13 +93,13 @@
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">
+            <h2 class="section-title" data-aos="fade-up">
                 <i class="fas fa-user-circle"></i>
                 À propos de moi
             </h2>
             <div class="about-content">
                 <div class="about-grid">
-                    <div class="about-text">
+                    <div class="about-text" data-aos="fade-right" data-aos-delay="200">
                         <p>
                             Je suis un développeur mobile et backend passionné par la création d'applications Android modernes 
                             et de solutions backend robustes. Mon expertise couvre le développement mobile avec Kotlin/Jetpack Compose, 
@@ -91,7 +114,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="about-visual">
+                    <div class="about-visual" data-aos="fade-left" data-aos-delay="400">
                         <div class="profile-card">
                             <div class="profile-avatar">
                                 <i class="fas fa-user-circle"></i>
@@ -111,12 +134,12 @@
 
     <section id="skills" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">
+            <h2 class="section-title" data-aos="fade-up">
                 <i class="fas fa-laptop-code"></i>
                 Mes Compétences
             </h2>
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-header">
                         <i class="fas fa-mobile-alt"></i>
                         <h3>Développement Mobile</h3>
@@ -147,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
                     <div class="skill-header">
                         <i class="fas fa-server"></i>
                         <h3>Développement Backend</h3>
@@ -178,7 +201,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
                     <div class="skill-header">
                         <i class="fas fa-tools"></i>
                         <h3>Outils & Frontend</h3>
@@ -214,12 +237,12 @@
 
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">
+            <h2 class="section-title" data-aos="fade-up">
                 <i class="fas fa-project-diagram"></i>
                 Mes Projets
             </h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -237,7 +260,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="project-icon">
                         <i class="fas fa-draw-polygon"></i>
                     </div>
@@ -255,7 +278,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="project-icon">
                         <i class="fas fa-users"></i>
                     </div>
@@ -278,17 +301,17 @@
 
     <section id="contact" class="section bg-dark">
         <div class="container">
-            <h2 class="section-title text-white">
+            <h2 class="section-title text-white" data-aos="fade-up">
                 <i class="fas fa-envelope-open"></i>
                 Me Contacter
             </h2>
             <div class="contact-content">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
                     <h3>Parlons de votre projet</h3>
                     <p>Vous avez un projet en tête ? Une idée innovante ? N'hésitez pas à me contacter !</p>
                     
                     <div class="contact-methods">
-                        <div class="contact-method">
+                        <div class="contact-method" data-aos="fade-up" data-aos-delay="300">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
@@ -297,7 +320,7 @@
                                 <p>bendjibril789@gmail.com</p>
                             </div>
                         </div>
-                        <div class="contact-method">
+                        <div class="contact-method" data-aos="fade-up" data-aos-delay="400">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -306,7 +329,7 @@
                                 <p>+237 673200421</p>
                             </div>
                         </div>
-                        <div class="contact-method">
+                        <div class="contact-method" data-aos="fade-up" data-aos-delay="500">
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
@@ -318,7 +341,7 @@
                     </div>
                 </div>
 
-                <div class="contact-form">
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="400">
                     <form>
                         <div class="form-group">
                             <i class="fas fa-user"></i>
